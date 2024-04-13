@@ -1,0 +1,11 @@
+pour creer une executable d une api django 
+
+1 on installe pyinstaller
+pip install pyinstaller
+2 on navige vers la path manage.py et on execute 
+pyinstaller manage.py
+
+pour lancer l api avec cet executable on execute la conmmande depuis la racide de cet executable
+manage.exe runserver localhost:8000 --noreload
+
+NB: avant de faire l executabble du project django de passer le debug a vrai sinon ca fonctionnera pas

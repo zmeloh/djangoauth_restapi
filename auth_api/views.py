@@ -17,6 +17,14 @@ from datetime import datetime, timedelta
 import secrets
 
 
+
+def custom_404(request, exception):
+    response_data = {
+        'error': 'Page not found',
+        'message': 'The requested resource was not found.'
+    }
+    return JsonResponse(response_data, status=404)
+
 @api_view(['POST'])
 def signup(request):
     serializer = UserSerializer(data=request.data)
